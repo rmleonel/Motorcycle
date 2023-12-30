@@ -1,0 +1,36 @@
+{% extends 'padre.html' %}
+{% load static %}
+{% block contenidoQueCambia %}
+<section class="py-5">
+    <div class="container my-5">
+        <div class="row justify-content-center">
+            <div class="col-lg-6">
+                <h2>Formulario Luxury</h2>
+                    <form action="/procesar_formulario" method="post">{% csrf_token  %}
+                        <!-- Campo de Marca -->
+                        <label for="marca">Marca:</label>
+                        <input type="text" id="marca" name="marca" required>
+                        <br>
+
+                        <!-- Campo de Modelo -->
+                        <label for="modelo">Modelo:</label>
+                        <input type="text" id="modelo" name="modelo" required>
+                        <br>
+
+                        <!-- Campo de Año -->
+                        <label for="anio">Año:</label>
+                        <input type="number" id="anio" name="anio" min="1900" max="2023" required>
+                        <br>
+
+                        <!-- Botón de Enviar -->
+                        <input type="submit" value="Enviar">
+                    </form>
+            </div>
+        </div>
+    </div>
+</section>
+<div class="py-5 bg-image-full" style="background-image: url('https://cdn.pixabay.com/photo/2016/12/23/16/17/motorcycle-1927535_1280.jpg')">
+    <!-- Put anything you want here! The spacer below with inline CSS is just for demo purposes!-->
+    <div style="height: 20rem"></div>
+</div>
+{% endblock%}
