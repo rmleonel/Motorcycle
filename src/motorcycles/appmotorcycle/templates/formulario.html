@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <section class="py-5">
+        <div class="container my-5">
+            <div class="row justify-content-center">
+                <div class="col-lg-6">
+                    <h2>Formulario Economy</h2>
+                        <form action="{% url 'formulario' %}" method="post">{% csrf_token  %}
+                            <!-- Campo de Marca -->
+                            <label for="marca">Marca:</label>
+                            <input type="text" id="marca" name="marca" required>
+                            <br>
+    
+                            <!-- Campo de Modelo -->
+                            <label for="modelo">Modelo:</label>
+                            <input type="text" id="modelo" name="modelo" required>
+                            <br>
+    
+                            <!-- Campo de Año -->
+                            <label for="año">Año:</label>
+                            <input type="number" id="año" name="año" min="1900" max="2023" required>
+                            <br>
+    
+                            <!-- Botón de Enviar -->
+                            <input type="submit" value="Enviar">
+                        </form>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+</html>

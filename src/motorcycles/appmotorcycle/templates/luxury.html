@@ -6,7 +6,7 @@
         <div class="row justify-content-center">
             <div class="col-lg-6">
                 <h2>Formulario Luxury</h2>
-                    <form action="/procesar_formulario" method="post">{% csrf_token  %}
+                    <form action="{% url 'formulario' %}" method="post">{% csrf_token  %}
                         <!-- Campo de Marca -->
                         <label for="marca">Marca:</label>
                         <input type="text" id="marca" name="marca" required>
@@ -18,8 +18,8 @@
                         <br>
 
                         <!-- Campo de Año -->
-                        <label for="anio">Año:</label>
-                        <input type="number" id="anio" name="anio" min="1900" max="2023" required>
+                        <label for="año">Año:</label>
+                        <input type="number" id="año" name="año" min="1900" max="2023" required>
                         <br>
 
                         <!-- Botón de Enviar -->

@@ -2,7 +2,7 @@ from django.db import models
 
 class Luxury(models.Model):
     marca = models.CharField(max_length = 20)
-    modelo = models.IntegerField()
+    modelo = models.CharField(max_length = 20)
     año = models.IntegerField()
 
     def __str__(self):
@@ -10,7 +10,7 @@ class Luxury(models.Model):
 
 class Medium(models.Model):
     marca = models.CharField(max_length = 20)
-    modelo = models.IntegerField()
+    modelo = models.CharField(max_length = 20)
     año = models.IntegerField()
 
     def __str__(self):
@@ -18,7 +18,7 @@ class Medium(models.Model):
 
 class Economy(models.Model):
     marca = models.CharField(max_length = 20)
-    modelo = models.IntegerField()
+    modelo = models.CharField(max_length = 20)
     año = models.IntegerField()
     
     def __str__(self):
