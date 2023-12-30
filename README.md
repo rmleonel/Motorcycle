@@ -4,11 +4,11 @@ Es un proyecto con tres formularios en tres templates distintos dependiendo la c
 
 ## Características Principales
 
-- Tres Categorías de Motocicletas: Explora motocicletas de lujo, medianas y económicas, cada una con su propio conjunto único de características y opciones.
+- Tres Categorías de Motocicletas: Deja ingresar motocicletas de lujo, medianas y económicas, cada una con su propio conjunto único de características.
 
-- Formularios Personalizados: Utiliza formularios personalizados para cada categoría de motocicletas, permitiendo a los usuarios especificar sus preferencias de manera precisa.
+- Formularios Personalizados: Utiliza formularios personalizados para cada categoría de motocicletas, permitiendo a los usuarios ingresar datos de manera precisa.
 
-- Interfaz Intuitiva: Una interfaz de usuario intuitiva que facilita la navegación y la selección de motocicletas según las necesidades individuales.
+- Interfaz Intuitiva: Una interfaz de usuario intuitiva que facilita la navegación y la eleccion de motocicletas a ingresar.
 
 ## Requisitos
 
